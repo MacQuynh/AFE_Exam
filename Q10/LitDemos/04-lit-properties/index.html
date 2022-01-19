@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LitElement properties</title>
+    
+</head>
+<body>
+    <kpu-properties-demo1></kpu-properties-demo1>
+    <kpu-properties-demo2
+        prop1="hello world"
+        prop2="5"
+        prop3="true"
+        prop4='[1,2,3,4]'
+        prop5='{"stuff":"hi"}'
+        ></kpu-properties-demo2><br/>
+        <br/>
+    <kpu-on-first-update></kpu-on-first-update>
+    <kpu-await-update-complete></kpu-await-update-complete>
+    <script type="module" src="./kpu-properties-demo1.js"></script>
+    <script type="module" src="./kpu-properties-demo2.js"></script>
+    <script type="module" src="./kpu-on-first-update.js"></script>
+    <script type="module" src="./kpu-await-update-complete.js"></script>
+</body>
+</html>

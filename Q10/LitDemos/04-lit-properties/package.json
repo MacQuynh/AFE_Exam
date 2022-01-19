@@ -1,0 +1,15 @@
+{
+  "name": "lit-demo1",
+  "version": "1.0.0",
+  "description": "Lit demo 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "polymer serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lit-element guide/start",
+  "license": "MIT",
+  "dependencies": {
+    "lit-element": "^2.1.0"
+  }
+}

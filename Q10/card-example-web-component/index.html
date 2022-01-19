@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web components</title>
+    <script src="./js/card.js"> </script>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #FBF5E3;
+            background: #002B36;
+            margin-left: 3em;
+        }
+
+        h1 {
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GOT Demo</h1>
+    <template id="my-card">
+        <style>
+            h1 {
+                color: blue;
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                background-color: lightgrey;
+                color: black;
+            }
+
+            .price {
+                color: grey;
+                font-size: 22px;
+            }
+
+            button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+
+            button:hover {
+                opacity: 0.7;
+            }
+        </style>
+        <div class="card">
+            <img src="./assets/got-1.jpg" alt="unknown" style="width:100%">
+            <h1>
+                <slot name="p-name">No product name</slot>
+            </h1>
+            <p class="price">
+                <slot name="price">$0</slot>
+            </p>
+            <p>Some text about the product.</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </template>
+    <my-card onclick="console.log('1')">
+        <span slot="p-name">Iron throne</span>
+        <span slot="price">$19.99</span>
+    </my-card>
+</body>
+
+</html>

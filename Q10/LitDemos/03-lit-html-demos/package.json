@@ -1,0 +1,14 @@
+{
+  "name": "03-lit-html-demos",
+  "version": "1.0.0",
+  "description": "lit-html demos",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Poul Ejnar Rovsing",
+  "license": "MIT",
+  "dependencies": {
+    "lit-html": "^1.0.0"
+  }
+}
